@@ -1,0 +1,81 @@
+.styled-bg {
+    background-color: adjust-hue($color: #ffffff, $degrees: 0);
+    flex-direction: column; 
+    row-gap: 10px;
+}
+
+.example-form {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 50px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+.route-list {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 900px;
+}
+
+ol.stepper {
+  --default-b: lightgrey;
+  --default-c: black;
+  --active-b: purple;
+  --active-c: white;
+  --circle: 3.5em; /* size of circle */
+  --b: 5px; /* line thickness */
+}
+
+ol.stepper {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 0;
+  font-size: 12px;
+  background: 
+    linear-gradient(var(--default-b) 0 0) no-repeat
+    50% calc((var(--circle) - var(--b))/2)/100% var(--b);
+}
+
+ol.stepper {
+  counter-reset: step;
+  width: 100%;
+}
+ol.stepper li::before {
+  content: counter(step) " ";
+  counter-increment: step;
+}
+ol.stepper li {
+  display: grid;
+  place-items: center;
+  gap: 5px;
+}
+ol.stepper li::before {
+  content: counter(step) " ";
+  counter-increment: step;
+  display: grid;
+  place-content: center;
+  height: var(--circle);
+  aspect-ratio: 1;
+  background: var(--active-b);
+  color: var(--active-c);
+  border: 5px solid #fff;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+ol.stepper li.active ~ li::before{
+  background: var(--default-b);
+  color: var(--default-c);
+}
+ol li span {
+  display: block;
+}
