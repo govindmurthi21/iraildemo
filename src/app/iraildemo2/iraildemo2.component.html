@@ -116,7 +116,8 @@
         </nav>
     </div>
     <div class="irail-info">
-        <p class="notice">This demo simulates an event driver architecture.</p>
+        <p class="notice">This demo simulates an event driver architecture. The message entered in the textbox is published to a kafka topic via websockets. 
+          The kafka consumer then calls a spam/not spam classifier restfully exposed via a FAST API endpoint. The results are enriched and published to a RabbitMQ queue, which then sends back the results to the UI via the open websocket. </p>
     </div>
     <div class="irail-action-container">
       <mat-card>
