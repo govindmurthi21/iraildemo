@@ -84,37 +84,37 @@
 </style>
 <div class="content styled-bg">
     <div>
-    <nav>
-        <div class="pill-group">
-            @for (item of [
-              { title: 'Explore CSX', link: 'https://https://www.csx.com/' },
-              { title: 'Working At CSX', link: 'https://www.csx.com/index.cfm/working-at-csx/' },
-              { title: 'Management Team', link: 'https://www.csx.com/index.cfm/about-us/company-overview/csx-leadership/management-team/' },
-              { title: 'Demo 2', link: '/demo2' }
-            ]; track item.title) {
-              <a
-                class="pill"
-                [href]="item.link"
-                target="_blank"
-                rel="noopener"
-              >
-                <span>{{ item.title }}</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="14"
-                  viewBox="0 -960 960 960"
-                  width="14"
-                  fill="currentColor"
+      <nav>
+          <div class="pill-group">
+              @for (item of [
+                { title: 'Explore CSX', link: 'https://https://www.csx.com/' },
+                { title: 'Working At CSX', link: 'https://www.csx.com/index.cfm/working-at-csx/' },
+                { title: 'Management Team', link: 'https://www.csx.com/index.cfm/about-us/company-overview/csx-leadership/management-team/' },
+                { title: 'Demo 2', link: '/demo2' }
+              ]; track item.title) {
+                <a
+                  class="pill"
+                  [href]="item.link"
+                  target="_blank"
+                  rel="noopener"
                 >
-                  <path
-                    d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
-                  />
-                </svg>
-              </a>
-            }
-          </div>
-    </nav>
-</div>
+                  <span>{{ item.title }}</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="14"
+                    viewBox="0 -960 960 960"
+                    width="14"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
+                    />
+                  </svg>
+                </a>
+              }
+            </div>
+      </nav>
+  </div>
     <div class="irail-info">
         <p class="notice">iRail supports digital creativity concerning mobility in Belgium. This is an attempt to make the railway time schedules in Belgium easily available for anyone.
 

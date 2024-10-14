@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MatIcon, MatIconModule} from '@angular/material/icon';
+import { MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {Observable, throwError} from 'rxjs';
-import {catchError, map, startWith} from 'rxjs/operators';
+import {map, startWith} from 'rxjs/operators';
 import {AsyncPipe, formatDate, NgFor, NgIf} from '@angular/common';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatInputModule} from '@angular/material/input';
@@ -12,7 +12,6 @@ import {MatCardModule} from '@angular/material/card';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import Station from './station';
 import ConnectionTypes from './connection';
-import { randomUUID } from 'crypto';
 
 
 @Component({
