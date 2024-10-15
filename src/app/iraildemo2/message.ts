@@ -4,9 +4,12 @@ type Message = {
     kafkaTopic: string,
     kafkaPartition: number,
     kafkaOffset: string,
-    rabbitId: string,
-    rabbitQueue: string,
-    rabbitTime: string,
+    receiverId: string,
+    receiverQueue: string,
+    receiverTime: string,
+    producerId: string,
+    producerQueue: string,
+    producerTime: string,
 }
 
 export default Message;

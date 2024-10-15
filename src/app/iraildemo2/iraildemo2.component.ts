@@ -40,8 +40,8 @@ export class Iraildemo2Component {
   spamFormControl = new FormControl('');
   displayedColumns: string[] = ['message', 'spamOrNot', 
     'kafkaTopic', 'kafkaPartition',
-    'kafkaOffset', 'rabbitId',
-    'rabbitQueue', 'rabbitTime',];
+    'kafkaOffset'
+  ];
 
   constructor(
     private ws: WebSocketService
